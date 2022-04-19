@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo5.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contacto - Las Violetas</title>
+</head>
+
+<!-- fila de logo + nav --> 
+<body>
+	<!-- fila de logo + nav --> 
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">  <img src="../img/logoweb.png" alt="" width="200"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+                        <div class="navbar-nav lista-navegacion">
+                            <a class="nav-link" href="../index.html">INICIO</a>
+                            <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                            <a class="nav-link" href="habitaciones.html">HABITACIONES</a>
+                            <a class="nav-link" href="galeria.html">GALERIA</a>
+                            <a class="nav-link active" aria-current="page" href="#">CONTACTO</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!-- cierre de fila logo + nav -->
+
+<!-- fila de información de contacto-->
+<main class="grid-main-contacto">
+    <h1>CONTACTO</h1>
+    <!-- formulario de contacto -->
+	    <section id="seccionContacto">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.0999765038973!2d-56.50476988538424!3d-32.816115880960176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a64165a440e681%3A0x4154aa3e44421809!2sGral.%20Artigas%20172%2C%2045100%20Paso%20de%20los%20Toros%2C%20Departamento%20de%20Tacuaremb%C3%B3!5e0!3m2!1sen!2suy!4v1646882174322!5m2!1sen!2suy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+            <br>
+            <form action="#" class="formulario">
+                <h2>CONTACTANOS</h2>
+                <label for="NOMBRE">
+                <input type="text" required placeholder="NOMBRE">
+                </label>
+                <label for="email">
+                <input type="email"  required placeholder="MAIL" name="email">
+                </label>
+                <label for="telefono">
+                <input type="tel" placeholder="TELEFONO">
+                </label>
+                <label for="mensaje">
+                    <textarea placeholder="MENSAJE"></textarea>
+                </label> 
+                <label>
+                <p>Tipo de estadia:</p>
+                <div id="radio">
+                    <p>Permanente</p>
+                        <input type="radio" name="lado" value="permanente">
+                    <p>Transitoria</p>
+                        <input type="radio" name="lado" value="transitoria">
+                    </label>
+                    <br>
+                </div>
+                <div id="botones">
+                    <input type="submit" value="Enviar">
+                    <br>
+                    <input type="reset"  value="Limpiar formulario">
+                </div>
+                <table id="cuadroAbajo">
+                    <tr>
+                        <th>
+                            <img src="../img/phone icon.png" alt="" width="15">
+                        </th>
+                        <th>
+                            4664-6349
+                        </th>
+                        <th>
+                            <img src="../img/mail icon.png" alt="" width="15">
+                        </th>
+                        <th>
+                            delsol.estudio@hotmail.com
+                        </th>
+                    </tr>
+                </table>
+            </form>
+        </section>        
+    </main>          
+<!-- cierre de form contacto -->
+    
+<!-- inicio de footer --> 
+<footer>
+    <div class="row">
+        <a class="col-12 col-sm-4" href="../index.html">  <img src="../img/logoweb.png" alt="" width="50"></a>
+        <p class="col-12 col-sm-4">Gral. Artigas 172, Paso de los Toros, Tacuarembó</p>
+        <a class="col-12 col-sm-4" href="https://www.facebook.com/casalasvioletas/">  <img src="../img/fb-icon-purple.png" alt="" width="25"></a>
+    </div>
+</footer >
+<!-- cierre de footer --> 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

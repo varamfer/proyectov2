@@ -1,0 +1,594 @@
+/*FUENTE IMPORTADA DE GOOGLE FONTSs*/
+@font-face{
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face{
+  font-family: "Raleway";
+  src: url(./fonts/Raleway-VariableFont_wght.ttf);
+}
+/*FIN IMPORTADA DE GOOGLE FONTSs*/
+
+/*ESTILO TITULOS y LINKS*/
+
+h1 {
+    font-family: "Raleway",sans-serif;
+    font-weight: bold;
+    color:rgb(119, 48, 191);
+    margin-top: 0%;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 45px;
+}
+
+h2 {
+    font-family: "Raleway",sans-serif;
+    color:rgb(103, 99, 107);
+    margin-bottom: 0px;
+    text-align: left;
+    font-size: xx-large;
+    padding-left: 10px;
+}
+
+h3 {
+    font-family: "Raleway",sans-serif;
+    color:rgb(103, 99, 107);
+    margin-bottom: 0px;
+    text-align: left;
+    font-size: x-large;
+}
+
+p {
+    font-family: "Raleway",sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+
+/*FIN ESTILO TITULOS y LINKS*/
+
+/*ESTILO GLOBAL*/
+html{
+    margin: 0px 0px 0px 0px;
+}
+
+header {
+  border-bottom: solid 3px rgb(126, 124, 128);
+  }
+
+/*FIN STILO GLOBAL*/
+
+
+/*ESTILO HEADER*/
+
+  .bg-light {
+    background-color: white !important;
+}
+
+  .navbar-brand {
+    margin-left: 20px;
+  }
+
+  .nav-link {
+    font-size: x-large;
+  }
+
+  .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: darkviolet;
+}
+ 
+.navbar-nav {
+  display: flex;
+  background-color:white;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 0px;
+  padding-right: 0px;
+ font-family: "Raleway",sans-serif;
+}
+
+.navbar-nav a {
+  transition: transform .2s; 
+}
+
+.navbar-nav a:hover {
+  transform: scale(1.2);
+}
+
+.navbar-nav a:hover {
+color: aquamarine !important;
+}
+
+.navbar-collapse{
+  justify-content: flex-end;
+}
+
+/* FIN ESTILO HEADER*/
+
+
+
+/*INDEX*/
+
+  .grid-main {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1.7fr 0.5fr 0.8fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "grid-main-aboutus grid-main-aboutus"
+      "grid-mision grid-mision"
+      "grid-goals grid-goals"; 
+    grid-area: grid-main; 
+  }
+
+  .grid-main-aboutus {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "grid-main-aboutus-title grid-main-aboutus-title"
+      "grid-main-aboutus-brief grid-main-aboutus-nothing";
+    grid-area: 1 / 1 / 2 / 3;
+    background-image: url(./img/portada_aguaVioleta.png);
+    height: 650px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: 768px) {
+    .grid-main-aboutus {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr ;
+        height: 100%;
+        grid-auto-rows: 30px;
+        align-items: center;
+
+    }
+}
+
+
+
+
+  @media (max-width: 1024px) {
+    .grid-main-aboutus {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr ;
+    }
+}
+
+  .grid-main-aboutus p {
+    color:rgb(126, 124, 128);
+    text-align: left;
+    font-size: x-large;
+    padding-left: 10px;
+    padding-right: 200px;
+  }
+
+  .grid-main-aboutus-title { 
+      grid-area: grid-main-aboutus-title; 
+  }
+
+  @media (max-width: 768px) {
+    .grid-main-aboutus-title {
+      margin-right: 10px;
+      grid-auto-rows: 50%;
+      grid-auto-columns: 50%;
+    }
+}
+  
+  .grid-main-aboutus-brief { 
+      grid-area: grid-main-aboutus-brief; 
+  }
+
+
+  @media (max-width: 768px) {
+    .grid-main-aboutus-brief p {
+      padding-left: 10px;
+      padding-right: 10px;
+  
+    }
+}  
+  
+  .grid-main-aboutus-nothing { 
+      grid-area: grid-main-aboutus-nothing; 
+  }
+
+  @media (max-width: 768px) {
+    .grid-main-aboutus-nothing {
+     display: none;
+    }
+  }
+  
+
+  .grid-mision {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "grid-mision-text grid-mision-photo"; 
+    grid-area: 2 / 1 / 3 / 3; 
+  }
+  .grid-mision-text { 
+    grid-area: grid-mision-text; 
+    color:rgb(126, 124, 128);
+    text-align: left;
+    font-size: x-large;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .grid-mision-photo { 
+      grid-area: grid-mision-photo; 
+      align-self: stretch;
+      background-image: url(./img/portada10.png);
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+  
+
+  @media (min-width: 768px) and (max-width: 1208px) {
+    .grid-mision-photo {
+        height: 320px ;
+        background-position: right;
+    }
+}
+
+@media (max-width: 768px) {
+  .grid-mision-photo {
+      height: 600px ;
+      background-position: right;
+      justify-self: stretch;
+  }
+}
+
+
+  .grid-goals {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "grid-goals-photo grid-goals-text"; 
+    grid-area: grid-goals; 
+  }
+
+  .grid-goals-photo { 
+    grid-area: grid-goals-photo; 
+    align-self: stretch;
+    background-image: url(./img/portada\ 12.png);
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: 768px) and (max-width: 1208px) {
+    .grid-goals-photo {
+        height: 350px ;
+        background-position: right;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .grid-goals-photo {
+      height: 100% ;
+      background-position: right;
+      justify-self: stretch;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .grid-goals-photo {
+      height: 100% ;
+      background-image: url(./img/adultos_felices.webp);
+
+  }
+}
+
+
+  .grid-goals-text { 
+    grid-area: grid-goals-text; 
+    align-self: stretch;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+.grid-goals-text li {
+    font-size: larger;
+}
+/*FIN INDEX*/ 
+
+
+/*SERVICES*/ 
+.grid-container-services {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 0.1fr 7.8fr 0.05fr; 
+    grid-template-rows: 0.1fr 2.6fr 0.2fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". grid-navBar ."
+      ". grid-main-service ."
+      ". grid-footer ."; 
+  }
+
+  .grid-main-service {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "."; 
+    grid-area: grid-main-service; 
+  }
+
+/*FIN SERVICES*/ 
+
+/*HABITACIONES*/ 
+
+.grid-container-habitaciones {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 0.1fr 7.8fr 0.05fr; 
+    grid-template-rows: 0.1fr 2.6fr 0.2fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". grid-navBar ."
+      ". grid-main-habitaciones ."
+      ". grid-footer ."; 
+  }
+
+.grid-main-habitaciones {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "."; 
+    grid-area: grid-main-habitaciones; 
+  }
+/*FIN HABITACIONES*/ 
+
+
+/*GALERIA*/ 
+
+.grid-container-galeria {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 0.1fr 7.8fr 0.05fr; 
+    grid-template-rows: 0.1fr 2.6fr 0.2fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". grid-navBar ."
+      ". grid-main-galeria ."
+      ". grid-footer ."; 
+  }
+
+.grid-main-galeria {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "."; 
+    grid-area: grid-main-galeria; 
+  }
+
+
+.card-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    height: 100%;
+}
+
+.imagen-galeria {
+    display: block;
+    border: solid 2px rgb(126, 124, 128) ;
+    padding: 10px 10px 10px 10px; 
+    background-color:rgb(211, 199, 237);
+    background-color:white;
+    margin-bottom: 40px;
+
+}
+
+ul li {
+    list-style-type: disc;
+    font-family: "Raleway",sans-serif;
+    color:rgb(103, 99, 107);
+    font-size: x-large;
+}
+
+/*FIN GALERIA*/ 
+
+/*CONTACTO*/ 
+
+.grid-container-contacto {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 0.1fr 7.8fr 0.05fr; 
+    grid-template-rows: 0.1fr 2.6fr 0.2fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". grid-navBar ."
+      ". grid-main-contacto ."
+      ". grid-footer ."; 
+  }
+
+
+  .grid-main-contacto {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "."; 
+    grid-area: grid-main-contacto; 
+  }
+  
+/*Seccion contacto*/
+#seccionContacto{
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#seccionContacto iframe{
+    align-items: flex-start;
+}
+
+/*Fin Seccion contacto**/
+
+
+
+/*-------------------- FORMULARIO-----------------------------*/
+.formulario {
+width: 380px;
+height: 500px;
+background-color: rgb(211, 199, 237);
+border-radius: 8px;
+box-shadow: 0 0 40px -10px #000;
+margin-left: 5%;
+padding: 20px 30px;
+max-width:calc(100vw - 40px);
+box-sizing:border-box;
+font-family: "Raleway",sans-serif;
+position:relative;
+}
+
+@media (max-width: 768px) {
+  .formulario {
+    margin-top: 20px;
+  }
+}
+
+
+.formulario h2 {
+    margin:10px 0;
+    padding-bottom:10px;
+    border-bottom:3px solid  rgb(126, 124, 128);
+    text-align: left;
+}
+
+.formulario p {
+    margin:10px 0;
+    padding-bottom:10px;
+    text-align: left;
+    color: rgb(126, 124, 128);
+}
+
+input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    border: 0;
+    font-family: "Raleway",sans-serif;
+    transition:all .3s;
+    border-bottom:1px solid rgb(126, 124, 128);
+}
+
+
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top: 8px;
+    box-sizing:border-box;
+    background:none;
+    font-family: "Raleway",sans-serif;
+    transition:all .3s;
+    border-bottom:1px solid rgb(126, 124, 128);
+}
+
+
+#botones {
+    float:right;
+    background:0;
+    cursor:pointer;
+    transition:all .3s;
+    display: flex;
+    justify-content: space-between;
+}
+
+#botones input {
+    width:100%;
+    padding:10px;
+    border:2px solid rgb(126, 124, 128) ;
+    font-family: "Raleway",sans-serif;
+    color: rgb(126, 124, 128);
+    margin-right: 3px;
+}
+
+#radio {
+    display: flex;
+}
+#radio input {
+    margin-top: 12px;
+}
+
+#cuadroAbajo {
+    margin-top: 70px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(126, 124, 128);
+    border-radius: 8px;
+    width: 100%;
+    color: whitesmoke;
+    font-size: small;
+}
+
+@media (max-width: 320px) {
+  #cuadroAbajo {
+    margin-left: 0%;
+  }
+}
+
+/*--------------------FIN FORMULARIO-----------------------------*/
+
+
+/*----------------FIN ESTILO CONTACTO---------------------------------------------------------------*/
+
+
+
+/*ESTILO FOOTER*/
+.imagen-footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.face {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+}
+/*FIN ESTILO FOOTER*/
+
+/*GRIDS*/
+
+  
+
+  
