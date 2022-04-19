@@ -15,7 +15,7 @@ h1 {
     margin-top: 0%;
     padding-top: 25px;
     text-align: center;
-    font-size: 45px;
+    font-size: 2.5rem;
 }
 
 h2 {
@@ -30,7 +30,8 @@ h2 {
 h3 {
     font-family: "Raleway",sans-serif;
     color:rgb(103, 99, 107);
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+    padding-left: 15px;
     text-align: left;
     font-size: x-large;
 }
@@ -301,16 +302,7 @@ color: aquamarine !important;
 /*FIN INDEX*/ 
 
 
-/*SERVICES*/ 
-@media (max-width: 576px) {
-  .card-flex img {
-    width: 90%;
-    height: auto;
-  }
-}
-/*FIN SERVICES*/ 
-
-/*HABITACIONES*/ 
+/*SERVICES HABITACIONES Y GALERIA*/ 
 @media (max-width: 1024px) {
   .card-flex-hab img {
     width: 90%;
@@ -319,41 +311,31 @@ color: aquamarine !important;
 }
 
 
-/*FIN HABITACIONES*/ 
+.fondoPages {
+  background-image: url(../img/fondoPages.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 2px solid rgb(126, 124, 128);
 
-
-/*GALERIA*/ 
-
-.grid-container-galeria {
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-auto-rows: 1fr; 
-    grid-template-columns: 0.1fr 7.8fr 0.05fr; 
-    grid-template-rows: 0.1fr 2.6fr 0.2fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      ". grid-navBar ."
-      ". grid-main-galeria ."
-      ". grid-footer ."; 
-  }
-
-.grid-main-galeria {
-    display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "."; 
-    grid-area: grid-main-galeria; 
-  }
-
+}
 
 .card-flex {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: stretch;
-    height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  height: 100%;
 }
+
+@media (max-width: 576px) {
+  .card-flex img {
+    width: 90%;
+    height: auto;
+  }
+}
+/*FIN SERVICES HABITACIONES Y GALERIA*/ 
+
+/*GALERIA*/ 
 
 .imagen-galeria {
     display: block;
@@ -366,7 +348,7 @@ color: aquamarine !important;
 }
 
 ul li {
-    list-style-type: disc;
+    list-style-type: none;
     font-family: "Raleway",sans-serif;
     color:rgb(103, 99, 107);
     font-size: x-large;
@@ -527,6 +509,14 @@ textarea{
 
 
 /*ESTILO FOOTER*/
+.fondoFooter {
+background-color:rgb(250, 240, 255);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
 .col-12 {
   display: flex;
   justify-content: center !important;    
@@ -547,9 +537,3 @@ textarea{
   }
 
 /*FIN ESTILO FOOTER*/
-
-/*GRIDS*/
-
-  
-
-  
