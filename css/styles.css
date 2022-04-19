@@ -310,29 +310,14 @@ color: aquamarine !important;
 /*FIN SERVICES*/ 
 
 /*HABITACIONES*/ 
-
-.grid-container-habitaciones {
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-auto-rows: 1fr; 
-    grid-template-columns: 0.1fr 7.8fr 0.05fr; 
-    grid-template-rows: 0.1fr 2.6fr 0.2fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      ". grid-navBar ."
-      ". grid-main-habitaciones ."
-      ". grid-footer ."; 
+@media (max-width: 1024px) {
+  .card-flex-hab img {
+    width: auto;
+    height: auto;
   }
+}
 
-.grid-main-habitaciones {
-    display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "."; 
-    grid-area: grid-main-habitaciones; 
-  }
+
 /*FIN HABITACIONES*/ 
 
 
