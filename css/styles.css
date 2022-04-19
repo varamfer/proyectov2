@@ -4,10 +4,6 @@
     src: url(../fonts/Raleway-VariableFont_wght.ttf);
 }
 
-@font-face{
-  font-family: "Raleway";
-  src: url(./fonts/Raleway-VariableFont_wght.ttf);
-}
 /*FIN IMPORTADA DE GOOGLE FONTSs*/
 
 /*ESTILO TITULOS y LINKS*/
@@ -574,17 +570,25 @@ textarea{
 
 
 /*ESTILO FOOTER*/
-.imagen-footer {
-  display: block;
-  margin-left: auto;
-  margin-right: auto
-}
-
-.face {
+.col-12 {
   display: flex;
-  justify-content: center;  
+  justify-content: center !important;    
   align-items: center;
 }
+
+@media (min-width: 576px) {
+  .col-sm-4:first-child {
+    display: flex;
+    justify-content: flex-end !important;    
+  }
+
+
+@media (min-width: 576px) {
+  .col-sm-4:last-child {
+    display: flex;
+    justify-content: flex-start !important;    
+  }
+
 /*FIN ESTILO FOOTER*/
 
 /*GRIDS*/
