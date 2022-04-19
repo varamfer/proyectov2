@@ -135,7 +135,7 @@ color: aquamarine !important;
       "grid-main-aboutus-title grid-main-aboutus-title"
       "grid-main-aboutus-brief grid-main-aboutus-nothing";
     grid-area: 1 / 1 / 2 / 3;
-    background-image: url(./img/portada_aguaVioleta.png);
+    background-image: url(../img/portada_aguaVioleta.png);
     height: 650px;
     background-size: cover;
     background-position: center;
@@ -232,7 +232,7 @@ color: aquamarine !important;
   .grid-mision-photo { 
       grid-area: grid-mision-photo; 
       align-self: stretch;
-      background-image: url(./img/portada10.png);
+      background-image: url(../img/portada10.png);
       height: 200px;
       background-size: cover;
       background-position: center;
@@ -269,7 +269,7 @@ color: aquamarine !important;
   .grid-goals-photo { 
     grid-area: grid-goals-photo; 
     align-self: stretch;
-    background-image: url(./img/portada\ 12.png);
+    background-image: url(../img/portada\ 12.png);
     height: 300px;
     background-size: cover;
     background-position: center;
@@ -295,7 +295,7 @@ color: aquamarine !important;
 @media (max-width: 320px) {
   .grid-goals-photo {
       height: 100% ;
-      background-image: url(./img/adultos_felices.webp);
+      background-image: url(../img/adultos_felices.webp);
 
   }
 }
