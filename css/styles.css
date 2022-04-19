@@ -313,7 +313,7 @@ color: aquamarine !important;
 /*HABITACIONES*/ 
 @media (max-width: 1024px) {
   .card-flex-hab img {
-    width: auto;
+    width: 90%;
     height: auto;
   }
 }
