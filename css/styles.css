@@ -110,195 +110,68 @@ color: aquamarine !important;
 
 /*INDEX*/
 
-  .grid-main {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1.7fr 0.5fr 0.8fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "grid-main-aboutus grid-main-aboutus"
-      "grid-mision grid-mision"
-      "grid-goals grid-goals"; 
-    grid-area: grid-main; 
-    border-bottom: 2px solid rgb(126, 124, 128);
-  }
-
-  .grid-main-aboutus {  
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1.5fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "grid-main-aboutus-title grid-main-aboutus-title"
-      "grid-main-aboutus-brief grid-main-aboutus-nothing";
-    grid-area: 1 / 1 / 2 / 3;
+.aboutus {
     background-image: url(../img/portada_aguaVioleta.png);
-    height: 650px;
+    height: 600px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
+}
 
-  @media (max-width: 1024px) {
-    .grid-main-aboutus {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr ;
-        height: 100%;
-        grid-auto-rows: 30px;
-        align-items: center;
+.sub_aboutus{
+  position: absolute;
+  margin-top: 4rem;
+}
+
+@media (max-width: 450px) {
+  .aboutus{
+    height: 750px;
+  }
+}
+
+
+.parrafo_aboutus{
+  color: rgb(126, 124, 128);
+  text-align: left;
+  font-size: x-large;
+  width: 50%;
+  padding-left: 2rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 970px) {
+  .parrafo_aboutus{
+    width: 100%;
+  }
+ 
+  @media (max-width: 330px) {
+    .parrafo_aboutus{
+      font-size: large;
     }
+
+.mision p {
+  color: red;
+}
+    
+
+@media (max-width: 1350px) {
+  .img-fluid{
+    height: 100%;
+  }
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-  .grid-main-aboutus p {
-    color:rgb(126, 124, 128);
-    text-align: left;
-    font-size: x-large;
-    padding-left: 10px;
-    padding-right: 200px;
-  }
-
-  .grid-main-aboutus-title { 
-      grid-area: grid-main-aboutus-title; 
-  }
-
-  @media (max-width: 768px) {
-    .grid-main-aboutus-title {
-      margin-right: 10px;
-      grid-auto-rows: 50%;
-      grid-auto-columns: 50%;
-    }
-}
-  
-  .grid-main-aboutus-brief { 
-      grid-area: grid-main-aboutus-brief; 
-  }
-
-
-  @media (max-width: 768px) {
-    .grid-main-aboutus-brief p {
-      padding-left: 10px;
-      padding-right: 10px;
-  
-    }
-}  
-  
-  .grid-main-aboutus-nothing { 
-      grid-area: grid-main-aboutus-nothing; 
-  }
-
-  @media (max-width: 768px) {
-    .grid-main-aboutus-nothing {
-     display: none;
-    }
-  }
-  
-
-  .grid-mision {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "grid-mision-text grid-mision-photo"; 
-    grid-area: 2 / 1 / 3 / 3; 
-  }
-  .grid-mision-text { 
-    grid-area: grid-mision-text; 
-    color:rgb(126, 124, 128);
-    text-align: left;
-    font-size: x-large;
-    padding-left: 10px;
-    padding-right: 10px;
-    align-self: center;
-    justify-self: center;
-  }
-
-  .grid-mision-photo { 
-      grid-area: grid-mision-photo; 
-      align-self: stretch;
-      background-image: url(../img/portada10.png);
-      height: 200px;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-  }
-  
-
-  @media (min-width: 768px) and (max-width: 1208px) {
-    .grid-mision-photo {
-        height: 320px ;
-        background-position: right;
-    }
+.limision {
+  color: rgb(126, 124, 128) !important;
+  font-family: "Raleway",sans-serif;
+  text-align: right;
+  font-size: medium;
 }
 
-@media (max-width: 768px) {
-  .grid-mision-photo {
-      height: 600px ;
-      background-position: right;
-      justify-self: stretch;
-  }
-}
-
-
-  .grid-goals {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "grid-goals-photo grid-goals-text"; 
-    grid-area: grid-goals; 
-  }
-
-  .grid-goals-photo { 
-    grid-area: grid-goals-photo; 
-    align-self: stretch;
-    background-image: url(../img/portada\ 12.png);
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  @media (min-width: 768px) and (max-width: 1208px) {
-    .grid-goals-photo {
-        height: 350px ;
-        background-position: right;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 768px) {
-  .grid-goals-photo {
-      height: 100% ;
-      background-position: right;
-      justify-self: stretch;
-  }
-}
-
-
-@media (max-width: 320px) {
-  .grid-goals-photo {
-      height: 100% ;
-      background-image: url(../img/adultos_felices.webp);
-
-  }
-}
-
-
-  .grid-goals-text { 
-    grid-area: grid-goals-text; 
-    align-self: stretch;
-    padding-left: 10px;
-    padding-right: 10px;
-    align-self: center;
-    justify-self: center;
-}
-
-.grid-goals-text li {
-    font-size: larger;
-}
 /*FIN INDEX*/ 
 
 
