@@ -184,7 +184,8 @@ color: aquamarine !important;
 @media (max-width: 1024px) {
   .card-flex-hab img {
     width: 90%;
-    height: auto;
+    height: auto;pwd
+
   }
 }
 
@@ -372,7 +373,8 @@ textarea{
 
 
 /*ESTILO FOOTER*/
-.fondoFooter {
+.fondoFooter 
+{
 background-color:rgb(250, 240, 255);
 background-position: center;
 background-repeat: no-repeat;
