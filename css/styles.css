@@ -1,0 +1,402 @@
+/*FUENTE IMPORTADA DE GOOGLE FONTSs*/
+@font-face{
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+
+/*FIN IMPORTADA DE GOOGLE FONTSs*/
+
+/*ESTILO TITULOS y LINKS*/
+
+h1 {
+    font-family: "Raleway",sans-serif;
+    font-weight: bold;
+    color:rgb(119, 48, 191);
+    margin-top: 0%;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: "Raleway",sans-serif;
+    color:rgb(103, 99, 107);
+    margin-bottom: 0px;
+    text-align: left;
+    font-size: xx-large;
+    padding-left: 10px;
+}
+
+h3 {
+    font-family: "Raleway",sans-serif;
+    color:rgb(103, 99, 107);
+    margin-bottom: 10px;
+    padding-left: 15px;
+    text-align: left;
+    font-size: x-large;
+}
+
+p {
+    font-family: "Raleway",sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+
+/*FIN ESTILO TITULOS y LINKS*/
+
+/*ESTILO GLOBAL*/
+html{
+    margin: 0px 0px 0px 0px;
+}
+
+header {
+  border-bottom: solid 3px rgb(126, 124, 128);
+  }
+
+/*FIN STILO GLOBAL*/
+
+
+/*ESTILO HEADER*/
+
+  .bg-light {
+    background-color: white !important;
+}
+
+  .navbar-brand {
+    margin-left: 20px;
+  }
+
+  .nav-link {
+    font-size: x-large;
+  }
+
+  .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: darkviolet;
+}
+ 
+.navbar-nav {
+  display: flex;
+  background-color:white;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 0px;
+  padding-right: 0px;
+ font-family: "Raleway",sans-serif;
+}
+
+.navbar-nav a {
+  transition: transform .2s; 
+}
+
+.navbar-nav a:hover {
+  transform: scale(1.2);
+}
+
+.navbar-nav a:hover {
+color: aquamarine !important;
+}
+
+.navbar-collapse{
+  justify-content: flex-end;
+}
+
+/* FIN ESTILO HEADER*/
+
+
+
+/*INDEX*/
+
+.aboutus {
+  background-image: url(../img/portada_aguaVioleta.png);
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sub_aboutus{
+  position: absolute;
+  margin-top: 4rem;
+}
+
+@media (max-width: 450px) {
+  .aboutus{
+    height: 750px;
+  }
+}
+
+.parrafo_aboutus{
+  color: rgb(126, 124, 128);
+  text-align: left;
+  font-size: x-large;
+  width: 50%;
+  padding-left: 2rem;
+  margin-top: 1rem;
+}
+
+
+@media (max-width: 970px) {
+  .parrafo_aboutus{
+    width: 100%;
+  }
+}
+
+@media (max-width: 330px) {
+  .parrafo_aboutus{
+    font-size: large;
+  }
+}
+
+.mision p {
+  color: red;
+}
+
+@media (max-width: 1350px) {
+  .img-fluid{
+    height: 100%;
+  }
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.limision {
+  color: rgb(126, 124, 128) !important;
+  font-family: "Raleway",sans-serif;
+  text-align: left;
+  font-size: medium;
+}
+
+.limision li {
+  list-style-type: disc;
+}
+/*FIN INDEX*/ 
+
+
+/*SERVICES HABITACIONES Y GALERIA*/ 
+@media (max-width: 1024px) {
+  .card-flex-hab img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+.fondoPages {
+  background-image: url(../img/fondoPages.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 2px solid rgb(126, 124, 128);
+}
+
+.card-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  height: 100%;
+}
+
+@media (max-width: 576px) {
+  .card-flex img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+.imagen-galeria {
+    display: block;
+    border: solid 2px rgb(126, 124, 128) ;
+    padding: 10px 10px 10px 10px; 
+    background-color:rgb(211, 199, 237);
+    background-color:white;
+    margin-bottom: 40px;
+}
+
+.imagen-galeria {
+  transition: transform .2s; 
+}
+
+.imagen-galeria:hover {
+  transform: scale(1.2);
+}
+/*FIN SERVICES HABITACIONES Y GALERIA*/ 
+
+/*GALERIA*/ 
+
+ul li {
+    list-style-type: none;
+    font-family: "Raleway",sans-serif;
+    color:rgb(103, 99, 107);
+    font-size: x-large;
+}
+
+/*FIN GALERIA*/ 
+
+/*CONTACTO*/ 
+
+#seccionContacto{
+    height: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 821px) {
+  #seccionContacto {
+    height: 900px;
+    }
+}
+#seccionContacto iframe{
+    align-items: flex-start;
+}
+
+/*Fin Seccion contacto**/
+
+
+
+/*-------------------- FORMULARIO-----------------------------*/
+.formulario {
+width: 380px;
+height: 500px;
+background-color: rgb(211, 199, 237);
+border-radius: 8px;
+box-shadow: 0 0 40px -10px #000;
+margin-left: 5%;
+padding: 20px 30px;
+max-width:calc(100vw - 40px);
+box-sizing:border-box;
+font-family: "Raleway",sans-serif;
+position:relative;
+}
+
+@media (max-width: 768px) {
+  .formulario {
+    margin-top: 20px;
+  }
+}
+
+
+.formulario h2 {
+    margin:10px 0;
+    padding-bottom:10px;
+    border-bottom:3px solid  rgb(126, 124, 128);
+    text-align: left;
+}
+
+.formulario p {
+    margin:10px 0;
+    padding-bottom:10px;
+    text-align: left;
+    color: rgb(126, 124, 128);
+}
+
+input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    border: 0;
+    font-family: "Raleway",sans-serif;
+    transition:all .3s;
+    border-bottom:1px solid rgb(126, 124, 128);
+}
+
+
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top: 8px;
+    box-sizing:border-box;
+    background:none;
+    font-family: "Raleway",sans-serif;
+    transition:all .3s;
+    border-bottom:1px solid rgb(126, 124, 128);
+}
+
+
+#botones {
+    float:right;
+    background:0;
+    cursor:pointer;
+    transition:all .3s;
+    display: flex;
+    justify-content: space-between;
+}
+
+#botones input {
+    width:100%;
+    padding:10px;
+    border:2px solid rgb(126, 124, 128) ;
+    font-family: "Raleway",sans-serif;
+    color: rgb(126, 124, 128);
+    margin-right: 3px;
+}
+
+#radio {
+    display: flex;
+}
+#radio input {
+    margin-top: 12px;
+}
+
+#cuadroAbajo {
+    margin-top: 70px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(126, 124, 128);
+    border-radius: 8px;
+    width: 100%;
+    color: whitesmoke;
+    font-size: small;
+}
+
+@media (max-width: 320px) {
+  #cuadroAbajo {
+    margin-left: 0%;
+  }
+}
+
+/*--------------------FIN FORMULARIO-----------------------------*/
+
+
+/*----------------FIN ESTILO CONTACTO---------------------------------------------------------------*/
+
+
+
+/*ESTILO FOOTER*/
+.fondoFooter {
+background-color:rgb(250, 240, 255);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+.col-12 {
+  display: flex;
+  justify-content: center !important;    
+  align-items: center;
+}
+
+@media (min-width: 576px) {
+  .col-sm-4:first-child {
+    display: flex;
+    justify-content: flex-end !important;    
+  }
+}
+
+@media (min-width: 576px) {
+  .col-sm-4:last-child {
+    display: flex;
+    justify-content: flex-start !important;    
+  }
+}
+/*FIN ESTILO FOOTER*/
